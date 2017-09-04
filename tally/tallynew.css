@@ -1,0 +1,184 @@
+body
+{
+background-image: url('riool11.jpg') ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.text
+{
+	margin: 100px 120px;
+	text-align:center;
+	display:inline-block;
+	transition: .5s;
+}
+.text span
+{
+	background:	#00b3b3;
+	opacity: .5;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	display: block;
+	font-family: arial;
+	font-size: 30px;
+	color: #a3ff1a;
+	float: left;
+	transition: .5s;
+}
+.text:hover span:nth-child(1)
+{
+border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+}
+.text:hover span:nth-child(11)
+{
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+}
+.text:hover span:nth-child(odd)
+{
+	transform: skewY(-15deg);
+	color:#a3ff1a; 
+	box-shadow: 0 60px 20px rgba(0,0,0,.1)
+}
+.text:hover span:nth-child(even)
+{
+	transform: skewY(15deg);
+    color:#a3ff1a; 
+    box-shadow: 0 60px 20px rgba(0,0,0,.1),inset 0px 0 30px rgba(0,0,0,0.2);
+}
+.text:hover
+{
+	transform: rotateX(40deg);
+}
+.div1
+{
+	width: 100%;
+	
+}
+.div2
+{	width: 50%;
+	height: 300px;
+	float: left;
+}
+.div3
+{
+	width: 50%;
+	height: 300px;
+	float: right;
+}
+.div2 ul
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:355px;
+	left: 250px;
+	transform: translate(-50%,-50%); 
+
+}
+.div2 ul li
+{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	line-height: 100px;
+	text-align: center;
+	background:#b8ff4d; 
+	opacity: .7;
+	font-size: 50px;
+	border-radius: 50%;
+	position: relative;
+	 transition: .5s ease-in-out;
+	 color: #262626;
+	 z-index: 1;
+
+}
+.div2 ul li:before
+{
+	content:'';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:#b8ff4d;
+		opacity: .7;
+	border-radius: 50%;
+ transform: scale(0);
+ transition: .5s ease-in-out;
+ z-index: -1;
+}
+.div2 ul li:hover:before
+{
+	transform: scale(.9);
+
+}
+.div2 ul li:hover
+{
+background:#66CDAA;
+}
+.div3 ul
+{
+	display: flex;
+	position: relative;
+	top: 0;
+	left: 0;
+	
+}
+.div3 ul li
+{
+	list-style: none;
+	position: relative;
+	left: 80px;
+}
+.div3 ul li a
+{
+	width: 80px;
+	height: 80px;
+	margin: 0 10px;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	font-size: 35px;
+	position: relative;
+	color: black;
+	border: 3px solid 	#F0E68C;
+	z-index: 1;
+}
+ul li a .fa 
+{
+	position: relative;
+	color: #262626;
+	transition: .5s;
+}
+ul li a:hover .fa
+{
+	transform: rotateY(360deg);
+}
+
+.div3 ul li:nth-child(1) a:hover
+{
+background:#3b5999;
+}
+.div3 ul li:nth-child(2) a:hover
+{
+background:#55acee;
+}.div3 ul li:nth-child(3) a:hover
+{
+background:#dd4b39;
+}.div3 ul li:nth-child(4) a:hover
+{
+background:#0077B5;
+}
+.div3 ul li:nth-child(5) a:hover
+{
+background:#e4405f;
+}
