@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+<style type="text/css">
+	
+	body
+	{
+	background:url(h22.jpg);
+	height: 1080;
+	width: 1920;
+	}
+	.body
+	{
+		background-color: rgba(0,0,0,0.5);
+		height: 510px;
+		width: 330px;
+		text-align: center;
+	color:powderblue;
+	margin:auto;
+	margin-top: 150px;
+	margin-right: 400px;
+	margin-left: 400px;
+	width:510px;
+	height:330px;
+	}
+	#para
+	{
+		margin-bottom: 0px;
+		margin-left: 24%;
+	}
+    .head
+	{
+		background-color: black;
+		font-family: sans-serif;
+		color: white;
+		padding-top: px;
+		height: 60px;
+		font-size: 45px;
+		word-spacing: 5px;
+        text-shadow: 7px 4px 9px red;
+	}
+
+	</style>
+	<script type="text/javascript">
+		function f1(na)
+		{
+			var b=/^[A-Za-z]+$/;
+				if(na.value.match(b))
+			{
+			}
+			else
+			{
+				alert("Please enter alphabets only !!"); 
+			}
+
+		}
+
+
+	</script>
+</head>
+<body>
+<div class="head">
+<p align="center">Please, Sign In to Proceed</p>
+</div>
+
+<div class="body">
+    <h2 align="left" style="color: #ffffff; padding-left: 10px; padding-top: 10px">Sign In</h2>
+	<p align="left" style="margin-bottom:-8px; color: #ffffff; ">Sign into Rio Olympic Page with your User Account.</p><hr>
+	<br><br>
+	<table align="center" cellspacing="3px" cellpadding="5px">
+	<form method="get" action="home pro 3.html">
+	<tr>
+	<th>
+    Username </th>
+    <th>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="a1" size="25" cellspacing="30px" placeholder="Enter Name" id="na" onblur="f1(na);" required/></th>
+     </tr>
+     <tr>
+     <th>
+	Password  </th>
+	<td>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <input type="Password" name="a2" size="25" placeholder="Enter Password" required /></td>
+	 </tr>
+	<tr>
+	<td colspan="2">
+     <p align="left" id="para" style="float:left;"> <input type="checkbox" name="box" > save my password</p><br>
+     </td></tr>
+     <tr >
+     <td colspan="2">
+     <form method="get" action="home pro 3.html">
+    <input type="submit" name="submit" value="Sign In"/>
+     </form>
+      </td></tr>
+      </form>
+	 </table>
+	 <hr>
+	 <p align="right" style="padding-bottom: 4px;"><small>&copy;2017-2022 rio olympic,inc</small></p>
+
+</div>
+
+</body>
+</html>

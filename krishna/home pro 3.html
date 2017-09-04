@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+	<title>Payment Page</title>
+	<style type="text/css">
+		.tab
+		{
+			padding-left: 40px;
+			border: 2px solid green;
+			border-radius: 10px;
+			border-width: : 2px;
+			width: 485px;
+			height: 470px;
+			align-items: center;
+			margin-left: 400px;
+			margin-top: 110px;
+			background-color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function f1(c)
+	{
+		var a=/^[0-9]+$/;
+				if(c.value.match(a))
+			{
+			}
+			else
+			{
+				alert("Please fill correct numeric data only !!"); 
+			}
+	}
+	function f2(cvv)
+	{
+		var b=/^[0-9]+$/;
+				if(cvv.value.match(b))
+			{
+			}
+			else
+			{
+				alert("Please fill correct numeric data only !!"); 
+			}
+	}
+	function f3(na)
+	{
+		var d=/^[A-Za-z]+$/;
+				if(na.value.match(d))
+			{
+			}
+			else
+			{
+				alert("Please enter alphabets only !!"); 
+			}
+	}
+	function f4(cit)
+	{
+		var e=/^[A-Za-z]+$/;
+				if(cit.value.match(e))
+			{
+			}
+			else
+			{
+				alert("Please enter alphabets only !!"); 
+			}
+	}
+	function f5(sta)
+	{
+		var f=/^[A-Za-z]+$/;
+				if(sta.value.match(f))
+			{
+			}
+			else
+			{
+				alert("Please enter alphabets only !!"); 
+			}
+	}
+	function f6(co)
+	{
+		var g=/^[0-9]+$/;
+				if(co.value.match(g))
+			{
+			}
+			else
+			{
+				alert("Please fill correct numeric data only !!"); 
+			}
+	}
+	function f7(nu)
+	{
+		var h=/^[0-9]+$/;
+				if(nu.value.match(h))
+			{
+			}
+			else
+			{
+				alert("Please fill correct numeric data only !!"); 
+			}
+	}
+	function f8(email)
+		{
+			if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.email.value))
+			{
+			}
+			else
+			{
+				alert("Email not valid...."); 
+			}
+		}
+
+
+	</script>
+</head>
+<body bgcolor="black">
+	<div class="tab">
+	<p style="color: green; ">Payment Information</p>
+	<p style="color: black; "><small><b>Please enter your credit card information below and click submit.</b></small></p>
+	<table>
+		<form method="get" action="home pro 4.html" name="frm">
+		<tr>
+		<td colspan="8" >
+			* Credit Card Accepted
+			</td>
+			<td>
+			<input type="radio" name="r1"/><img src="Mastercard-1024x623.png" style="height: 30px; width: 50px;">
+			<input type="radio" name="r1"/><img src="Paytm_logo.png" style="height: 30px; width: 50px;">
+			<input type="radio" name="r1"/><img src="cre.jpg" style="height: 30px; width: 50px;">
+			<input type="radio" name="r1"/><img src="BHIM-APP-300x169.jpg" style="height: 30px; width: 50px;"></td></tr>
+			<tr>
+			<td colspan="8">
+			* Card Number
+			</td>
+			<td>
+			<input type="text" name="text" maxlength="16" id="c" onblur="f1(c);" required/><br></td></tr>
+			<tr>
+			<td colspan="8">
+			* Validity Date
+			</td>
+			<td>
+			<input type="date" name="d1" required /><br></td></tr>
+			<tr>
+			<td colspan="8">
+			* CVV</td>
+			<td>
+			<input type="text" name="c1" size="10px" maxlength="3" id="cvv" onblur="f2(cvv);" required /><br></td></tr>
+			<tr>
+			<td colspan="8">
+			* Name On Card</td>
+			<td>
+			<input type="text" name="n1" id="na" onblur="f3(na);" required /><br></td></tr>
+			<tr>
+			<td colspan="8">
+			* Country</td>
+			<td>
+			<select>
+				<option>--Please select a country--</option>  
+                <option>India</option>
+                <option>Australia</option>
+                <option>Canada</option>
+                <option>USA</option>
+                <option>Russia</option>
+                <option>Africa</option>
+                <option>Indonesia</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Spain</option>
+                <option>Brazil</option>
+                <option>OTHER</option>
+			</select><br></td></tr>
+			<tr>
+			<td colspan="8">
+            * Address</td>
+            <td>
+            <input type="text" name="a1" required /><br></td></tr>
+            <tr>
+            <td colspan="8">
+            * City</td>
+            <td>
+            <input type="text" name="c2" id="cit" onblur="f4(cit);" required /><br></td></tr>
+            <tr>
+            <td colspan="8">
+            * State</td>
+            <td>
+            <input type="text" name="s1" id="sta" onblur="f5(sta);" required /><br></td></tr>
+            <tr>
+            <td colspan="8">
+            Postal Code</td>
+            <td>
+            <input type="text" name="p1" id="co" onblur="f6(co);" /><br></td></tr>
+            <tr>
+            <td colspan="8">
+            * Contact number</td>
+            <td>
+            <input type="text" name="c3" id="nu" onblur="f7(nu);" required /><br></td></tr>
+            <tr>
+            <td colspan="8">
+            Email ID</td>
+            <td>
+            <input type="text" name="e1" id="email" onblur="f8(email)" /><br></td></tr>
+            <tr>
+            	<td style="color: red;"><small>* required fields</small></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr style="margin-top: 50px;">
+            <td rowspan="6">
+            <input type="submit" name="s2" value="SUBMIT" style="color: #8000ff;" /></td>
+            <td>
+            	
+            </td></tr>
+		</form></table>
+	</div>
+</body>
+</html>

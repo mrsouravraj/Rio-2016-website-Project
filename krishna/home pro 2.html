@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<title>class work</title>
+<style type="text/css">
+	#table
+	{
+		background-color: rgba(0,0,0,0.3);
+
+		color:#4dffff;
+		margin-left: 500px;
+		margin-right: 550px; 
+		margin-top: 100px;
+        width: 280px;
+        height: 410px;
+	}
+	h3
+	{
+		color: #4dffff;
+		background-color: grey;
+		word-spacing: 19px;
+		font-family: monospace;
+		text-align: center;
+		height: 65px;
+		font-size: 50px;
+		text-shadow: 7px 7px 5px purple;
+	}
+	body
+	{
+       	background: url("artsfon.com-69049.jpg");
+	}
+</style>
+<script type="text/javascript">
+	function f1(userid)
+	{
+		var a=/^[0-9]+$/;
+				if(userid.value.match(a))
+			{
+				
+			}
+			else
+			{
+				alert("Please fill correct numeric data only !!"); 
+			}
+	}
+	function f2(na)
+	{
+		var b=/^[A-Za-z]+$/;
+				if(na.value.match(b))
+			{
+			}
+			else
+			{
+				alert("Please enter alphabets only !!"); 
+			}
+	}
+	function f3(zip)
+	{
+		var c=/^[0-9]+$/;
+				if(zip.value.match(c))
+			{
+			}
+			else
+			{
+				alert("Please fill correct data !!"); 
+			}
+	}
+	function f4(email)
+		{
+			if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.email.value))
+			{
+			}
+			else
+			{
+				alert("Email not valid...."); 
+			}
+		}
+
+</script>
+</head>
+<body>
+<div id="sec">
+	<h3>Registration Form For Ticket Booking</h3>
+</div>
+<div id="table">
+<table>
+<form method="get" action="home pro.html" name="frm">
+<tr style="font-size: 25px; color: yellow;">
+	<th colspan="2">Registration Form</th>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>* User ID:</td>
+<td><input type="text" id="userid" name="a1" maxlength="8" onblur="f1(userid);" required /></td>
+</tr>
+<tr>
+<td>* Password:</td>
+<td><input type="password" name="a2" required/></td>
+</tr>
+<tr>
+<td>* Name:</td>
+<td><input type="text" size="25" name="a3" id="na" onblur="f2(na);" required/></td>
+</tr>
+<tr>
+<td>* Address:</td>
+<td><input type="text" size="25" name="a4" required/></td>
+</tr>
+<tr>
+<td>* country:</td>
+<td>
+<select name="a5">
+<option>please select a country</option>  
+<option>India</option>
+<option>Australia</option>
+<option>Canada</option>
+<option>USA</option>
+<option>Russia</option>
+<option>Africa</option>
+<option>Indonesia</option>
+<option>China</option>
+<option>Japan</option>
+<option>Spain</option>
+<option>Brazil</option>
+<option>OTHER</option>
+</select></td>
+</tr>
+<tr>
+<td>* ZIP code:</td>
+<td><input type="text" name="a6" id="zip" onblur="f3(zip);" required/></td>
+</tr>
+<tr>
+<td>* Email:</td>
+<td><input type="text" name="a7" size="26" id="email" onblur="f4(email);" required/></td>
+</tr>
+<tr>
+<td>* Language:</td>
+<td><input type="radio" name="a11" />English
+<input type="radio" name="a11" />Non English</td>
+</tr>
+
+<tr>
+<td>* Sex:</td>
+<td><input type="radio" name="a8" />male
+<input type="radio" name="a8" />Female</td>
+</tr>
+<tr>
+<td style="padding-bottom: 65px;">About</td>
+<td><textarea name="a9" rows="5" cols="20">enter text</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><input type="submit" name="a10" value="Submit" /></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td  style="color: red;" colspan="2"><small>*  denotes madatory</small></td></tr>
+</form>
+</table>
+</div>
+</body>
+</html>

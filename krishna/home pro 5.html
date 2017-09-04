@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation </title>
+	<script type="text/javascript">
+		function val(cl)
+		{
+			if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.cl.value))
+			{
+				alert("val");
+			}
+			else
+			{
+				alert("n v"); 
+			}
+			}
+	</script>
+</head>
+<body>
+     <form name="frm">
+     	username:<input type="text" name="text" id="cl">
+     	<input type="submit" name="ee" value="login" onclick="val(cl);">
+     </form>
+</body>
+</html>
